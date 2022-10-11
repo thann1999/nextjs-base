@@ -23,7 +23,8 @@
       "#layout/*": ["components/layouts/*"],
       "#services/*": ["services/*"],
       "#shared/*": ["shared/*"],
-      "#styles/*": ["styles/*"]
+      "#styles/*": ["styles/*"],
+      "#hooks/*": ["hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

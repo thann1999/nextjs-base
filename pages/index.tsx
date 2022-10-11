@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1>Hello world</h1>
+        <h1 className='text-orange-500'>Hello world</h1>
         <Link href='/post/first-post'>Go to first post</Link>
       </main>
 

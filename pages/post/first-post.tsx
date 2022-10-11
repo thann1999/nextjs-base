@@ -1,3 +1,5 @@
+import styles from './first-post.module.scss';
+
 interface Props {
   posts: any;
 }
@@ -5,18 +7,9 @@ interface Props {
 function FirstPost() {
   return (
     <>
-      <h1>Hello first post</h1>
+      <p className={styles.text}>Hello first post</p>
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   const res = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-//   return {
-//     props: {
-//       posts: res.data,
-//     },
-//   };
-// }
 
 export default FirstPost;

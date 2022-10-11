@@ -6,7 +6,7 @@ import {
 import storageService from '#services/storage/storage.service';
 import { ACCESS_TOKEN } from '#shared/const/app.const';
 import axios, { AxiosRequestHeaders } from 'axios';
-import { Observable, from, map, catchError, of } from 'rxjs';
+import { Observable, from, map, catchError, of, EMPTY } from 'rxjs';
 
 export class HttpService {
   private commonHeader = {
@@ -81,7 +81,7 @@ export class HttpService {
         //TODO: handle toast
         throw error;
       default:
-        return of();
+        return EMPTY;
     }
   }
 
